@@ -100,13 +100,16 @@ console.log(undefined / edad); //Na
 console.log(null * edad); //0
 
 
-parrafo = document.getElementById("parrafo");
+parrafo = document.getElementById("parrafo"); //
 parrafo.innerHTML = "Es una priueba de javascrip";
 
 
 cuadrado = document.querySelector(".cuadrado");
+//cuadrado = document.querySelector("#cuadrado");
+//cuadrado = document.querySelector("p"); 
 
-parrafo = document.querySelector("#parrafo");
+
+
 parrafo.innerHTML = "Otra prueba";
 
 titulo = document.querySelector("h1");
@@ -129,7 +132,7 @@ function mostrarMensaje() { // function actua como bloque
     document.write(mensaje);
 }
 mostrarMensaje();
-document.write("<br>mensaje fuera de la function: " + mensaje)
+//document.write("<br>mensaje fuera de la function: " + mensaje)
 document.write("<br>****************************************");
 /* let Ambito de bloque */
 
@@ -139,7 +142,7 @@ function mostrarMensaje2() { // function actua como bloque
     let mensaje2 = "<br>Mensaje del bloque 2";
     document.write(mensaje2);
 }
-mostrarMensaje2();
+//mostrarMensaje2();
 document.write("<br>mensaje fuera de la function: " + mensaje2)
 
 //Constantes (no se deben definir dos o mas veces.)
@@ -161,14 +164,15 @@ console.log("\x1b[41m colores en la consola");
 
 
 // Practica 2.5
+/*
 nom=prompt("Digite su Nombre:");
 if(nom){
-    alert("Has Aceptado tu nombre: "+nom);
+    //alert("Has Aceptado tu nombre: "+nom);
 }
 else{
-    alert("Has cancelado tu nombre ");
+    //alert("Has cancelado tu nombre ");
 }
-
+*/
 console.log('%c FIN DEL PROGRAMA', 'font-weight: bold;color:blue;text-decoration:underline;');
 
 
@@ -186,6 +190,58 @@ console.log('%c FIN DEL PROGRAMA', 'font-weight: bold;color:blue;text-decoration
 // // mensaje de entrada de datos
 // nombre=prompt("Escribe tu nombre");
 // document.write(`<br> El nombre es: ${nombre}`);
+
+
+let a=5;
+let b=a;
+console.log("El valor de b es = "+b);
+
+let c=a+b;
+a+=b;
+
+//falta 
+//---------------------
+
+c=a%b;
+console.log("El valor de c es "+c);
+
+let d=b**4;
+console.log("El valor de d es "+d);
+
+//Operadores de comparacion  -> solo dan true o false
+let respuesta=a==b; //false
+console.log(respuesta);
+
+respuesta=a!=b; //true
+console.log(respuesta);
+
+
+let e="5";
+respuesta=b==e;
+console.log(respuesta); //true aunque sean number y string
+
+//igualda estricta
+respuesta=b===e;
+console.log(respuesta);//false
+
+//desigualdad estriecta
+respuesta=b!==e;
+console.log(respuesta); // true
+
+
+//Mayor, Menor, Mayor o Igual, Menor o Igual
+respuesta=a>b; //true
+respuesta=c<b; //true
+respuesta=b>=e; 
+console.log(respuesta);
+
+++a;
+console.log(a);
+
+
+
+
+
 
 
 
