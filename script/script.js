@@ -276,8 +276,10 @@ else
     
 
 
+let imagen=document.querySelector("#imagen");
 
 
+imagen.src="../img/imagen-1.jpg";
 
 
 
