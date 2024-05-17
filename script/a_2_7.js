@@ -31,3 +31,11 @@ console.log("Potencia "+ 2**3);
 
 
 //Negativo unario
+
+resultado=+"3";
+console.log(typeof(resultado));
+console.log(resultado);
+resultado=+true;
+console.log(typeof(resultado));
+console.log(resultado);
+

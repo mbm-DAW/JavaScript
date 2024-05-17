@@ -146,13 +146,13 @@ function mostrarMensaje2() { // function actua como bloque
 document.write("<br>mensaje fuera de la function: " + mensaje2)
 
 //Constantes (no se deben definir dos o mas veces.)
-const IVA=21;
-let precio=50*((IVA/100)+1);
-document.write("<br>El precio final es " +precio);
+const IVA = 21;
+let precio = 50 * ((IVA / 100) + 1);
+document.write("<br>El precio final es " + precio);
 
 //IVA=4; si se quita da error en la consola del inspector pero no se ve en el editor
-precio=105*((IVA/100)+1);
-document.write("<br>El precio final es " +precio);
+precio = 105 * ((IVA / 100) + 1);
+document.write("<br>El precio final es " + precio);
 
 
 //salida por consola
@@ -192,51 +192,89 @@ console.log('%c FIN DEL PROGRAMA', 'font-weight: bold;color:blue;text-decoration
 // document.write(`<br> El nombre es: ${nombre}`);
 
 
-let a=5;
-let b=a;
-console.log("El valor de b es = "+b);
+let a = 5;
+let b = a;
+console.log("El valor de b es = " + b);
 
-let c=a+b;
-a+=b;
+let c = a + b;
+a += b;
 
 //falta 
 //---------------------
 
-c=a%b;
-console.log("El valor de c es "+c);
+c = a % b;
+console.log("El valor de c es " + c);
 
-let d=b**4;
-console.log("El valor de d es "+d);
+let d = b ** 4;
+console.log("El valor de d es " + d);
 
 //Operadores de comparacion  -> solo dan true o false
-let respuesta=a==b; //false
+let respuesta = a == b; //false
 console.log(respuesta);
 
-respuesta=a!=b; //true
+respuesta = a != b; //true
 console.log(respuesta);
 
 
-let e="5";
-respuesta=b==e;
+let e = "5";
+respuesta = b == e;
 console.log(respuesta); //true aunque sean number y string
 
 //igualda estricta
-respuesta=b===e;
+respuesta = b === e;
 console.log(respuesta);//false
 
 //desigualdad estriecta
-respuesta=b!==e;
+respuesta = b !== e;
 console.log(respuesta); // true
 
 
 //Mayor, Menor, Mayor o Igual, Menor o Igual
-respuesta=a>b; //true
-respuesta=c<b; //true
-respuesta=b>=e; 
+respuesta = a > b; //true
+respuesta = c < b; //true
+respuesta = b >= e;
 console.log(respuesta);
 
 ++a;
 console.log(a);
+
+
+//operaciones con AND Pag.55
+console.log("operaciones con AND");
+console.log(true && true);
+
+//Operador ternarios   2.4.6
+
+console.log(5 > 4 ? "5mayor4" : "5menor4");
+
+// solicita la edad "promp"
+// edad=prompt("Introduzca su edad: ");
+// edad>18?alert("Eres mayor de edad"):alert("eres menor de edad");
+// console.log(edad>18?"Eres mayor de edad":"Eres menor de edad");
+
+//if else
+console.log("*****************************");
+let local = 2;
+let visitante = 1;
+if (local === visitante)
+    console.log("Hay empate");
+else
+    console.log("No hay empate");
+console.log("Fin");
+
+
+//************* */
+if (local === visitante)
+    console.log("Hay empate");
+else if (local > visitante)
+    console.log("Gana equipo local");
+else
+    console.log("Gana equipo visitante");
+
+    console.log("Fin");
+
+    
+
 
 
 
