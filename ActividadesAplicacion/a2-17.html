@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2.17 Conversor de Tiempo</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="contenedor-V items-center ">
+    <h1>Conversor de tiempo</h1>
+    <p>Introduzca los dias, horas y minutos y pulse "Calcular" y obtendra los segundos.</p>
+    <div class="contenedor-V  col-6 items-center fondo-cuerpo ">
+        <div class="contenedor-H col-12">
+            <div class="contenedor-V col-6 texto-derecha ">
+                <label for="dias">Numero de dias:</label>
+                <label for="horas">Numero de horas:</label>
+                <label for="minutos">Numero de minutos:</label>
+            </div>
+            <div class="contenedor-V col-2">
+                <input type="text" id="dias">
+                <input type="text" id="horas">
+                <input type="text" id="minutos">
+            </div>
+        </div>
+        <div class="contenedor-H items-center col-12">
+            <button class="col-2 texto-24 margen-25" id="calcular">
+                Calcular
+            </button>
+            <p class="col-3 texto-24 item-rev texto-derecha" id="resultado">... </p>
+            <pre class="col-3 texto-24">  Segundos</pre>
+            <p class="col-10 texto-24 fondo-aviso" id="advertencia"></p>
+        </div>
+    </div>
+
+
+
+
+    <script src="script/a2-17.js"></script>
+</body>
+
+</html>

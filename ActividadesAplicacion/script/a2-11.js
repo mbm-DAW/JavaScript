@@ -17,7 +17,7 @@ while (true) {
 
     variable1 = 11;//let variable1 = 11 NO SE PUEDE VOLVER A DEFINIR
     var variable2 = 12; // ES DISTINTA A LA QUE ESTA FUERA DEL BUCLE
-    // variable3 = 13; NO SE PUEDE VOLVER A INICIALIZAR
+    // variable3 = 13; NO SE PUEDE VOLVER A INICIALIZAR PORQUE ES UNA CONSTANTE
     console.log("Variables locales DESPUES DE INICIALIZAR EN EL BUCLE");
     console.log(variable1);
     console.log(variable2);
