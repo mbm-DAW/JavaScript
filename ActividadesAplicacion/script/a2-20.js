@@ -30,7 +30,7 @@ do {
             if (altura == null) break;
 
             superficie = (base * altura) / 2;
-            console.log('la superficie es de '+superficie);
+            console.log('la superficie es de ' + superficie);
             alert('La superficie del triangulo es de ' + superficie);
             break;
 
@@ -46,7 +46,7 @@ do {
             if (altura == null) break;
 
             superficie = (base * altura);
-            console.log('la superficie es de '+superficie);
+            console.log('la superficie es de ' + superficie);
             alert('La superficie del rectangulo es de ' + superficie);
             break;
 
@@ -58,14 +58,16 @@ do {
             if (radio == null) break;
 
             superficie = Math.PI * radio ** 2;
-            console.log('la superficie es de '+superficie);
+            console.log('la superficie es de ' + superficie);
             alert('La superficie del circulo es de ' + superficie);
             break;
-
+        case 'd':
+            if (!confirm('Desea Salir?')) opcion = '';
+            break;
     }
 
 
-} while (opcion != 'd' && opcion!=null);
+} while (opcion != 'd' && opcion != null);
 
 
 
