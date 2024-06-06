@@ -7,5 +7,5 @@ for(let item of numeros){
     }
 }
 
-console.log(numeros);
-console.log(numeros2);
+console.log('Array original',numeros);
+console.log('Array multipos de tres',numeros2);
